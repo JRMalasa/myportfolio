@@ -1,50 +1,45 @@
 // components/Chat.js
-
 'use client';
 import Footer from '@/app/Footer';
 import React, { useState, useEffect } from 'react';
-import { FaHome } from "react-icons/fa";
-import { FaPhoneVolume } from "react-icons/fa6";
+import { FaHome, FaPhoneVolume } from "react-icons/fa"; // Fix import statement for FaPhoneVolume
 import { MdEmail } from "react-icons/md";
-
-import {useForm, Controller} from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
-
-
 
 interface formPf {
   name: string;
   email: string;
   message: string;
 }
+interface Message {
+  sender: string;
+  content: string;
+  options?: string[];
+}
+
 const Chat = () => {
-
-
   const router = useRouter();
-  const {register, control, handleSubmit} = useForm<formPf>();
+  const { register, control, handleSubmit } = useForm<formPf>();
 
-
-
-
-  
   const [isOpen, setIsOpen] = useState(false);
-  const [messages, setMessages] = useState([]);
+  const [messages, setMessages] = useState<Message[]>([]); // Provide correct type annotation for messages state
   const [input, setInput] = useState('');
-  const [options, setOptions] = useState([]);
+  const [options, setOptions] = useState<string[]>([]); // Provide correct type annotation for options state
   const [greetingsDisplayed, setGreetingsDisplayed] = useState(false);
 
   useEffect(() => {
     // Display initial greetings when the chat opens
     if (isOpen && !greetingsDisplayed) {
-      setMessages((prevMessages) => [
+      setMessages(prevMessages => [
         ...prevMessages,
         { sender: 'bot', content: 'Hello! How can I assist you today?' },
       ]);
       setGreetingsDisplayed(true);
     }
-  },  [isOpen, greetingsDisplayed]);
+  }, [isOpen, greetingsDisplayed]);
 
   const toggleChat = () => {
     if (!isOpen) {
@@ -59,7 +54,7 @@ const Chat = () => {
   const sendMessage = () => {
     if (input.trim() === '') return;
 
-    setMessages((prevMessages) => [
+    setMessages(prevMessages => [
       ...prevMessages,
       { sender: 'user', content: input },
     ]);
@@ -67,17 +62,16 @@ const Chat = () => {
 
     // Simulate a bot response with options (replace this with your chatbot logic)
     setTimeout(() => {
-      setMessages((prevMessages) => [
+      setMessages(prevMessages => [
         ...prevMessages,
         { sender: 'bot', content: 'Choose an option:', options: ['message', 'help', 'Option 1', 'Option 2', 'Option 3'] },
       ]);
-      setOptions(['message', 'help', 'Option 1', 'Option 1', 'Option 3']);
+      setOptions(['message', 'help', 'Option 1', 'Option 2', 'Option 3']);
     }, 500);
   };
-  
 
-  const handleOptionClick = (option: never) => {
-    setMessages((prevMessages) => [
+  const handleOptionClick = (option: string) => {
+    setMessages(prevMessages => [
       ...prevMessages,
       { sender: 'user', content: ` ${option}` },
     ]);
@@ -106,7 +100,7 @@ const Chat = () => {
           botResponse = `You chose: ${option}. I'll provide a response for ${option} shortly.`;
       }
 
-      setMessages((prevMessages) => [
+      setMessages(prevMessages => [
         ...prevMessages,
         { sender: 'bot', content: botResponse },
       ]);
