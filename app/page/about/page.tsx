@@ -5,14 +5,11 @@ import { FaJava } from "react-icons/fa";
 import { BiLogoJavascript } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiPhp } from "react-icons/si";
-import { useTheme } from 'next-themes';
+
 import Image from 'next/image';
 
 const page = () => {
-  const { theme } = useTheme();
-
-  const textColorClass = theme === 'dark' ? 'text-white' : 'text-black';
-
+ 
   return (
     <main>
     <div className="flex flex-col min-h-screen">
@@ -22,7 +19,7 @@ const page = () => {
     <div className="space-y-4 md:space-y-6 ">
       
       <div className="space-y-3">
-      <h2 className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ${textColorClass}`}>
+      <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl" >
       About Me
     </h2>
         <div className="flex justify-center">
@@ -52,7 +49,7 @@ style={{
   <div className="container grid max-w-5xl items-center justify-center gap-4 px-4 md:gap-8 md:px-6 lg:grid-cols-2 text-left xl:max-w-6xl xl:gap-10">
     <div className="space-y-4 md:space-y-6 ">
       <div className="space-y-3">
-      <h2 className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ${textColorClass}`}>
+      <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
       About Me
     </h2>
         <p className="mx-auto max-w-[700px]  text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">

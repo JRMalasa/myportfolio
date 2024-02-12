@@ -2,7 +2,6 @@
 
 'use client';
 import Footer from '@/app/Footer';
-import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
 import { FaHome } from "react-icons/fa";
 import { FaPhoneVolume } from "react-icons/fa6";
@@ -11,7 +10,8 @@ import { MdEmail } from "react-icons/md";
 import {useForm, Controller} from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
-import { useTheme } from 'next-themes';
+import Image from 'next/image';
+
 
 
 interface formPf {
@@ -21,9 +21,6 @@ interface formPf {
 }
 const Chat = () => {
 
-  const { theme } = useTheme();
-
-  const textColorClass = theme === 'dark' ? 'text-white' : 'text-black';
 
   const router = useRouter();
   const {register, control, handleSubmit} = useForm<formPf>();
@@ -123,14 +120,14 @@ const Chat = () => {
     <main>
   <div  className='flex flex-col min-h-screen'>
   <div className="flex items-center justify-center p-6 xl:p-10">
-        <h1 className={`text-4xl font-bold text-center w-full ${textColorClass}`}>Get in Touch</h1>
+        <h1 className="text-4xl font-bold text-center w-full ">Get in Touch</h1>
       </div>
   <div className="w-full gap-10 lg:grid lg:grid-cols-3 lg:gap-0 ">
       <div className="flex items-center justify-center p-6 xl:p-10">
         <div className="mx-auto w-[350px] space-y-6">
           <div className="space-y-2 text-center">
-            <FaHome className={`h-6 w-6 mx-auto ${textColorClass}`} />
-            <h1 className={`text-2xl font-bold ${textColorClass}`}>My Address</h1>
+            <FaHome className="h-6 w-6 mx-auto " />
+            <h1 className="text-2xl font-bold ">My Address</h1>
             <p className="text-gray-500 dark:text-gray-400">San Francisco Binan, Laguna</p>
           </div>
         </div>
@@ -138,8 +135,8 @@ const Chat = () => {
       <div className="flex items-center justify-center p-6 xl:p-10">
         <div className="mx-auto w-[350px] space-y-6">
           <div className="space-y-2 text-center">
-            <FaPhoneVolume className={`h-6 w-6 mx-auto ${textColorClass}`} />
-            <h1 className={`text-2xl font-bold ${textColorClass}`}>Phone Number</h1>
+            <FaPhoneVolume className="h-6 w-6 mx-auto " />
+            <h1 className="text-2xl font-bold ">Phone Number</h1>
             <p className="text-gray-500 dark:text-gray-400">+63 921354567
 
 </p>
@@ -149,8 +146,8 @@ const Chat = () => {
       <div className="flex items-center justify-center p-6 xl:p-10">
         <div className="mx-auto w-[350px] space-y-6">
           <div className="space-y-2 text-center">
-            <MdEmail className={`h-6 w-6 mx-auto ${textColorClass}`} />
-            <h1 className={`text-2xl font-bold ${textColorClass}`}>Email Address</h1>
+            <MdEmail className="h-6 w-6 mx-auto " />
+            <h1 className="text-2xl font-bold ">Email Address</h1>
             <p className="text-gray-500 dark:text-gray-400">bert@gmail.com</p>
           </div>
         </div>
@@ -158,7 +155,7 @@ const Chat = () => {
     </div>
     <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-start max-w-6xl px-4 mx-auto py-6">
       <div className="flex flex-col space-y-6">
-        <h1 className={`text-3xl font-bold ${textColorClass}`}>Feedback</h1>
+        <h1 className="text-3xl font-bold ">Feedback</h1>
         <form className="space-y-4"
          onSubmit={handleSubmit(async (data) => { 
           try {
@@ -172,7 +169,7 @@ const Chat = () => {
         
         >
           <div className="space-y-2">
-            <label className={`block text-sm font-medium text-gray-700 ${textColorClass}`} htmlFor="name">
+            <label className="block text-sm font-medium text-gray-700 " htmlFor="name">
               Name
             </label>
             <input
@@ -181,7 +178,7 @@ const Chat = () => {
             />
           </div>
           <div className="space-y-2">
-            <label className={`block text-sm font-medium text-gray-700 ${textColorClass}`} htmlFor="email">
+            <label className="block text-sm font-medium text-gray-700 " htmlFor="email">
               Email
             </label>
             <input
@@ -193,7 +190,7 @@ const Chat = () => {
           </div>
       
           <div className="space-y-2">
-            <label className={`block text-sm font-medium text-gray-700 ${textColorClass}`} htmlFor="message">
+            <label className="block text-sm font-medium text-gray-700 " htmlFor="message">
               Message
             </label>
             <textarea
@@ -210,14 +207,14 @@ const Chat = () => {
         </form>
       </div>
       <div className="hidden lg:block">
-        <img
-          alt="Feedback illustration"
-          className="aspect-square object-cover"
-          height={500}
-          src="https://www.ampfluence.com/wp-content/uploads/2022/07/Untitled-design-2-1.png"
-          width={500}
-        />
-      </div>
+      
+
+        <Image src={'/cont.png'} alt={'bgcont'} 
+        height={500}
+        width={500}  
+        className='aspect-square object-cover'
+        /> 
+          </div>
     </div>
 
       <div className="fixed bottom-4 right-4">

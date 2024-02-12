@@ -4,7 +4,7 @@ import "./globals.css";
 import '@radix-ui/themes/styles.css'
 
 import NavBar from "./components/NavBar";
-import { ThemeProvider } from "./components/ThemeProvider";
+
 
 
 
@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeProvider attribute='class' defaultTheme='light'>
+      
       <NavBar />
     
       <main> {children}</main>
-      </ThemeProvider>
+
        </body>
     </html>
   );

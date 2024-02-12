@@ -3,12 +3,10 @@ import React from 'react';
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link"
 import Footer from './Footer';
-import { useTheme } from 'next-themes';
+
 
 const Page = () => {
-  const { theme } = useTheme();
 
-  const textColorClass = theme === 'dark' ? 'text-white' : 'text-black';
 
   return (
     <main>
@@ -17,10 +15,10 @@ const Page = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-2">
-          <h1 className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ${textColorClass}`}>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl ">
             Boost your Productivity 
             </h1>
-            <h1 className={`text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ${textColorClass}`}>
+            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ">
            Hire me today!
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">Im a full-stack developer with a passion for building beautiful user interfaces.</p>

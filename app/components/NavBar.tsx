@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaGithub } from "react-icons/fa";
 import { PiGitlabLogoBold } from "react-icons/pi";
 import Link from 'next/link';
-import ThemeToggle from './ThemesToggle';
+
 
 
 const navigation = [
@@ -86,7 +86,7 @@ export default function Example() {
                       >
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">View notifications</span>
-                      <ThemeToggle />
+                   
 
                       </div>
 
