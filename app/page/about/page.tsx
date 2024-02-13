@@ -45,7 +45,7 @@ style={{
   </div>
 </section>
 
-<section className="hidden xl:block lg:block md:block sm:hidden w-full py-12 md:py-24 lg:py-32" id="about">
+<section className="hidden xl:block lg:block md:hidden sm:hidden w-full py-12 md:py-24 lg:py-32" id="about">
   <div className="container grid max-w-5xl items-center justify-center gap-4 px-4 md:gap-8 md:px-6 lg:grid-cols-2 text-left xl:max-w-6xl xl:gap-10">
     <div className="space-y-4 md:space-y-6 ">
       <div className="space-y-3">
