@@ -5,6 +5,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaGithub } from "react-icons/fa";
 import { PiGitlabLogoBold } from "react-icons/pi";
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -42,7 +43,15 @@ export default function Example() {
                     <div className="flex-shrink-0">
                     <div className="flex flex-col items-center md:items-start">
         <Link href="#">
-          <PiGitlabLogoBold className="h-6 w-6 text-slate-400" />
+        <Image
+  className="h-10 w-10 rounded-full text-slate-400"
+  src={'/jrmlogo.png'}
+  alt={'logo'}
+  width={24}
+  height={24}
+/>
+
+
           <span className="sr-only">JRM</span>
         </Link>
       </div>

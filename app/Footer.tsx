@@ -4,6 +4,8 @@ import { IoLogoFacebook } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import { PiTwitterLogoBold } from "react-icons/pi";
 import { PiGitlabLogoBold } from "react-icons/pi";
+import Image from 'next/image';
+
 
 const Footer = () => {
   return (
@@ -11,7 +13,12 @@ const Footer = () => {
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
       <div className="flex flex-col items-center md:items-start">
         <Link href="#">
-          <PiGitlabLogoBold className="h-6 w-6 text-slate-400" />
+        <Image
+  className="h-10 w-10 rounded-full text-slate-400"
+  src={'/jrmlogo.png'}
+  alt={'logo'}
+  width={24}
+  height={24} />
           <span className="sr-only">Your Company Name</span>
         </Link>
       </div>
