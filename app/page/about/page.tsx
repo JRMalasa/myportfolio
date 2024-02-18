@@ -35,9 +35,8 @@ style={{
  }} />
     </div>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          I am passionate in web development and creating innovative solutions. With a
-          background in computer science and several years of experience in the tech industry, I have developed
-          a wide range of skills that allow me to tackle any challenge that comes my way.
+          I am passionate in web development and creating innovative solutions.  I'm open to learning new skills and accepting any challenges programming-related.
+I am capable of developing software and have experience of basic web programming.
         </p>
       </div>
     </div>
@@ -53,9 +52,8 @@ style={{
       About Me
     </h2>
         <p className="mx-auto max-w-[700px]  text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-        I am passionate in web development and creating innovative solutions. With a
-          background in computer science and several years of experience in the tech industry, I have developed
-          a wide range of skills that allow me to tackle any challenge that comes my way.
+        I am passionate in web development and creating innovative solutions. I'm open to learning new skills and accepting any challenges programming-related.
+I am capable of developing software and have experience of basic web programming.
         </p>
       </div>
     </div>
