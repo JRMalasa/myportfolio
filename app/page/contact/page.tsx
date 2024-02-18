@@ -2,12 +2,13 @@
 'use client';
 import Footer from '@/app/Footer';
 import React, { useState, useEffect } from 'react';
-import { FaHome, FaPhoneVolume } from "react-icons/fa"; // Fix import statement for FaPhoneVolume
+import { FaHome,  } from "react-icons/fa"; // Fix import statement for FaPhoneVolume
 import { MdEmail } from "react-icons/md";
 import { useForm, Controller } from 'react-hook-form';
 import axios from 'axios';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import { FaPhone } from "react-icons/fa6";
 
 interface formPf {
   name: string;
@@ -129,7 +130,7 @@ const Chat = () => {
       <div className="flex items-center justify-center p-6 xl:p-10">
         <div className="mx-auto w-[350px] space-y-6">
           <div className="space-y-2 text-center">
-            <FaPhoneVolume className="h-6 w-6 mx-auto " />
+            <FaPhone className="h-6 w-6 mx-auto " />
             <h1 className="text-2xl font-bold ">Phone Number</h1>
             <p className="text-gray-500 dark:text-gray-400">+63 921354567
 
@@ -203,7 +204,7 @@ const Chat = () => {
       <div className="hidden lg:block">
       
 
-        <Image src={'/cont.png'} alt={'bgcont'} 
+        <Image src={'/cont.jfif'} alt={'bgcont'} 
         height={500}
         width={500}  
         className='aspect-square object-cover'

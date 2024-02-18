@@ -3,7 +3,7 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { FaGithub } from "react-icons/fa";
-import { PiGitlabLogoBold } from "react-icons/pi";
+
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -25,14 +25,6 @@ function classNames(...classes: string[]) {
 export default function Example() {
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <Disclosure as="nav" className="bg-gray-800">
           {({ open }) => (
@@ -80,15 +72,15 @@ export default function Example() {
                   </div>
                   <div className="hidden md:block">
                     <div className="ml-4 flex items-center md:ml-6">
-                      <button
+                      <Link
                         type="button"
-                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white "
-                      >
+                        className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white " href={'https://github.com/JRMalasa'}                      >
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">View notifications</span>
+                        
                         <FaGithub className="h-6 w-6" aria-hidden="true" />
 
-                      </button>
+                      </Link>
                         <div
                        
                         className="relative rounded-full bg-gray-800 p-1 ml-4 text-gray-400 hover:text-white"
@@ -157,13 +149,12 @@ export default function Example() {
                 <div className="border-t border-gray-700 pb-3 pt-4">
                   <div className="flex items-center px-5">
                   
-                    <button
+                    <Link
                       type="button"
-                      className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                    >
+                      className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" href={'https://github.com/JRMalasa'}                    >
                       <span className="absolute -inset-1.5" />
                       <FaGithub className="h-6 w-6" aria-hidden="true" />
-                    </button>
+                    </Link>
                   </div>
                  
                 </div>

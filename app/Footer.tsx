@@ -2,8 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 import { IoLogoFacebook } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
-import { PiTwitterLogoBold } from "react-icons/pi";
-import { PiGitlabLogoBold } from "react-icons/pi";
+import { FaThreads } from "react-icons/fa6";
 import Image from 'next/image';
 
 
@@ -28,15 +27,15 @@ const Footer = () => {
         <p className="text-sm text-gray-500 dark:text-gray-400">bert@gmail.com</p>
       </div>
       <div className="flex flex-row justify-center md:justify-start space-x-4">
-        <Link className="text-gray-500 dark:text-gray-400" href="#">
+        <Link className="text-gray-500 dark:text-gray-400" href="https://www.facebook.com/johnrobertangelo21">
           <IoLogoFacebook  className="h-6 w-6" />
           <span className="sr-only">Facebook</span>
         </Link>
         <Link className="text-gray-500 dark:text-gray-400" href="#">
-          <PiTwitterLogoBold className="h-6 w-6" />
+          <FaThreads className="h-6 w-6" />
           <span className="sr-only">Twitter</span>
         </Link>
-        <Link className="text-gray-500 dark:text-gray-400" href="#">
+        <Link className="text-gray-500 dark:text-gray-400" href="https://www.instagram.com/bertangelo14/">
           <FaInstagram className="h-6 w-6" />
           <span className="sr-only">Instagram</span>
         </Link>
