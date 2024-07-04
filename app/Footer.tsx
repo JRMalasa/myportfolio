@@ -23,8 +23,8 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center md:items-start">
         <p className="text-sm text-gray-500 dark:text-gray-400">San Francisco Binan, Laguna</p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">+63 0921354567</p>
-        <p className="text-sm text-gray-500 dark:text-gray-400">bert@gmail.com</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">+63 9925342414</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">bertangelo21@gmail.com</p>
       </div>
       <div className="flex flex-row justify-center md:justify-start space-x-4">
         <Link className="text-gray-500 dark:text-gray-400" href="https://www.facebook.com/johnrobertangelo21">
