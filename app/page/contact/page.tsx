@@ -83,7 +83,7 @@ const Chat = () => {
 
       switch (option) {
         case 'message':
-          botResponse = 'If you have any additional questions, please contact me at 0945432324.';
+          botResponse = 'If you have any additional questions, please contact me at 09925342414.';
           break;
         case 'help':
           botResponse = 'Sure, I am able to assist you. Please select the option below to learn more about my services.';
