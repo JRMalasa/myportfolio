@@ -52,7 +52,7 @@ style={{
       About Me
     </h2>
         <p className="mx-auto max-w-[700px]  text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-        I am passionate in web development and creating innovative solutions. I'm open to learning new skills and accepting any challenges programming-related.
+        I am passionate in web development and creating innovative solutions. I&apos;m open to learning new skills and accepting any challenges programming-related.
 I am capable of developing software and have experience of basic web programming.
         </p>
       </div>
