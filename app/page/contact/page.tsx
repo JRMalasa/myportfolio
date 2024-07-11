@@ -132,7 +132,7 @@ const Chat = () => {
           <div className="space-y-2 text-center">
             <FaPhone className="h-6 w-6 mx-auto " />
             <h1 className="text-2xl font-bold ">Phone Number</h1>
-            <p className="text-gray-500 dark:text-gray-400">+63 921354567
+            <p className="text-gray-500 dark:text-gray-400">+63 9925342414
 
 </p>
           </div>
@@ -143,7 +143,7 @@ const Chat = () => {
           <div className="space-y-2 text-center">
             <MdEmail className="h-6 w-6 mx-auto " />
             <h1 className="text-2xl font-bold ">Email Address</h1>
-            <p className="text-gray-500 dark:text-gray-400">bert@gmail.com</p>
+            <p className="text-gray-500 dark:text-gray-400">bertangelo21@gmail.com</p>
           </div>
         </div>
       </div>
