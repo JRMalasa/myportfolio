@@ -35,8 +35,7 @@ style={{
  }} />
     </div>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-          I am discipline and dedicated individual. I&apos;m open to learning new skills and accepting any challenges programming-related.
-          I am capable of developing software and have experience of basic web programming.
+        As a recent graduate, I have experience in developing responsive web applications using HTML, CSS, JavaScript, Firebase, and Tailwind CSS. I completed academic projects and gained client management skills through freelancing. I aim to contribute my technical and problem-solving skills to innovative web development projects with a dynamic team. 
         </p>
       </div>
     </div>
@@ -52,8 +51,7 @@ style={{
       About Me
     </h2>
         <p className="mx-auto max-w-[700px]  text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-       I am discipline and dedicated individual. I&apos;m open to learning new skills and accepting any challenges programming-related.
-          I am capable of developing software and have experience of basic web programming.
+        As a recent graduate, I have experience in developing responsive web applications using HTML, CSS, JavaScript, Firebase, and Tailwind CSS. I completed academic projects and gained client management skills through freelancing. I aim to contribute my technical and problem-solving skills to innovative web development projects with a dynamic team.
         </p>
       </div>
     </div>
@@ -72,6 +70,53 @@ style={{
   </div>
 </section>
 <div className="bg-white py-16 rounded-lg">
+      <div className="container mx-auto px-4 ">
+        <div className="text-center">
+          <h2 className="text-4xl font-bold">Projects</h2>
+       
+        </div>
+        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 ">
+          <div className="flex flex-col items-start p-6 bg-gray-100 rounded-lg">
+            <h3 className="text-xl font-semibold">Capstone Project</h3>
+            <p className="mt-4 text-md text-gray-500 ">Reyes Apartment with SMS notifications and online Payment System</p>
+            <div className='grid grid-cols-2'>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Java script </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Bootstrap </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Firebase </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Java </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-start p-6 bg-gray-100 rounded-lg">
+            <h3 className="text-xl font-semibold">Internship</h3>
+            <p className="mt-4 text-md text-gray-500 ">Student Evaluation System</p>
+            <div className='grid grid-cols-2'>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Java script </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Tailwind CSS </p>
+            </div>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">PHP </p>
+          </div>
+          <div className="flex flex-col items-start p-6 bg-gray-100 rounded-lg">
+            <h3 className="text-xl font-semibold">Freelance</h3>
+            <p className="mt-4 text-md text-gray-500 ">Alumni Monitoring Sytem</p>
+            <div className='grid grid-cols-2'>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Java script </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Tailwind CSS </p>
+            </div>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">PHP </p>
+          </div>
+          <div className="flex flex-col items-start p-6 bg-gray-100 rounded-lg">
+            <h3 className="text-xl font-semibold">Freelance</h3>
+            <p className="mt-4 text-md text-gray-500 ">Library Sytem</p>
+            <div className='grid grid-cols-2'>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Java script </p>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">Tailwind CSS </p>
+            </div>
+            <p className="mt-4 text-md text-gray-500 rounded-xl border-2 px-2">PHP </p>
+          </div>
+        </div>
+      </div>
+    </div>
+<div className="bg-white py-8 rounded-lg">
       <div className="container mx-auto px-4 ">
         <div className="text-center">
           <h2 className="text-4xl font-bold">Skills</h2>
