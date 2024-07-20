@@ -65,9 +65,9 @@ const Chat = () => {
     setTimeout(() => {
       setMessages(prevMessages => [
         ...prevMessages,
-        { sender: 'bot', content: 'Choose an option:', options: ['message', 'help', 'Option 1', 'Option 2', 'Option 3'] },
+        { sender: 'bot', content: 'Choose an option:', options: ['message', 'help'] },
       ]);
-      setOptions(['message', 'help', 'Option 1', 'Option 2', 'Option 3']);
+      setOptions(['message', 'help']);
     }, 500);
   };
 
@@ -87,15 +87,6 @@ const Chat = () => {
           break;
         case 'help':
           botResponse = 'Sure, I am able to assist you. Please select the option below to learn more about my services.';
-          break;
-        case 'Option 1':
-          botResponse = 'You selected Option 1. Here is the response for Option X.';
-          break;
-        case 'Option 2':
-          botResponse = 'You selected Option 2. Here is the response for Option Y.';
-          break;
-        case 'Option 3':
-          botResponse = 'You selected Option 3. Here is the response for Option Z.';
           break;
         default:
           botResponse = `You chose: ${option}. I'll provide a response for ${option} shortly.`;
