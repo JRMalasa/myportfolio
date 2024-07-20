@@ -35,7 +35,7 @@ style={{
  }} />
     </div>
         <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-        As a recent graduate, I have experience in developing responsive web applications using HTML, CSS, JavaScript, Firebase, and Tailwind CSS. I completed academic projects and gained client management skills through freelancing. I aim to contribute my technical and problem-solving skills to innovative web development projects with a dynamic team. 
+          Hi, I&apos;m John Robert Malasa, a recent BSIT graduate with expertise in web development. I specialize in creating responsive web applications using HTML, CSS, JavaScript, PHP, Firebase, and Tailwind CSS. My academic projects and freelancing experience have honed my skills in building modern websites and managing client needs. I&apos;m eager to apply my technical and problem-solving skills to innovative web development projects with a dynamic team.
         </p>
       </div>
     </div>
@@ -51,7 +51,7 @@ style={{
       About Me
     </h2>
         <p className="mx-auto max-w-[700px]  text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-        As a recent graduate, I have experience in developing responsive web applications using HTML, CSS, JavaScript, Firebase, and Tailwind CSS. I completed academic projects and gained client management skills through freelancing. I aim to contribute my technical and problem-solving skills to innovative web development projects with a dynamic team.
+            Hi, I&apos;m John Robert Malasa, a recent BSIT graduate with expertise in web development. I specialize in creating responsive web applications using HTML, CSS, JavaScript, PHP, Firebase, and Tailwind CSS. My academic projects and freelancing experience have honed my skills in building modern websites and managing client needs. I&apos;m eager to apply my technical and problem-solving skills to innovative web development projects with a dynamic team.
         </p>
       </div>
     </div>
