@@ -25,7 +25,7 @@ const Page = () => {
           </div>
           <div className="space-x-4">
           <Link
-      href="/MyCV.pdf"  // Adjust the path accordingly
+      href=""  // Adjust the path accordingly
       className='flex items-center justify-between rounded-md bg-slate-700 px-3.5 py-2.5 text-sm font-semibold text-gray-200 shadow-sm hover:bg-gray-900 focus-visible:outline-white lg:mb-0 mb-10'
     >
       DOWNLOAD CV <FaArrowRight />
